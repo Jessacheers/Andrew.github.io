@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Andrew</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            color: #fff;
+            background: #0c0c0c;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Hero Section */
+        .about-hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('IMG_8365.jpg') no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .about-hero h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            background: linear-gradient(90deg, #ff6f61, #ff3e3e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradient 3s infinite;
+        }
+
+        .about-hero h1 span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 300;
+            color: #ff6f61;
+            animation: fadeIn 2.5s ease forwards;
+        }
+
+        @keyframes textGradient {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* About Section */
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .about-me img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ff6f61;
+            animation: popIn 1.5s ease;
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .about-me h2 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .about-me p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 10px 0;
+            color: #ccc;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        /* Social Media */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+        }
+
+        footer .social-media a {
+            color: #ff6f61;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #ff3e3e;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Andrew Johnson</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div>
+            <h1>About <span>Andrew Devon Johnson</span></h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-me">
+        <img src="IMG_8365.jpg" alt="Andrew Devon Johnson">
+        <h2>Hello, I'm Andrew</h2>
+        <p>
+            Andrew is a talented actor, singer, and model known for his captivating performances and magnetic on-screen presence. 
+            With years of experience in the entertainment industry, he has honed his craft to deliver powerful and memorable performances.
+        </p>
+        <p>
+            From starring in independent films to gracing high-profile fashion campaigns, Andrew combines versatility and dedication in everything he does. 
+            He thrives on collaborating with creative teams and pushing boundaries in art and entertainment.
+        </p>
+        <p>
+            Andrew's journey continues to inspire and captivate audiences worldwide, proving that hard work and passion can lead to extraordinary achievements.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/matadorandrew/" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/c/ToroProductions/" target="_blank">YouTube</a>
+            <a href="https://open.spotify.com/artist/6lZjFQtKaUAGrFEjnu1DE6?si=T0jXDCkbR7eYk0gYSVpMnQ" target="_blank">Music</a>
+        </div>
+        <p>&copy; 2024 Andrew Devon Johnson. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
