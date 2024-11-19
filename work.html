@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Work</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+            background: linear-gradient(135deg, #111, #333);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #ff6f61;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(255, 62, 62, 0.7);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <h2>My Work</h2>
+        <!-- First Grid -->
+        <div class="gallery">
+            <div class="gallery-item"><img src="IMG_8368.jpg" alt="Andrew Work 1"></div>
+            <div class="gallery-item"><img src="IMG_8367.jpg" alt="Andrew Work 2"></div>
+            <div class="gallery-item"><img src="IMG_8366.jpg" alt="Andrew Work 3"></div>
+            <div class="gallery-item"><img src="IMG_8308.jpg" alt="Andrew Work 4"></div>
+            <div class="gallery-item"><img src="IMG_8306.jpg" alt="Andrew Work 5"></div>
+            <div class="gallery-item"><img src="IMG_8307.jpg" alt="Andrew Work 6"></div>
+            <div class="gallery-item"><img src="IMG_8287.jpg" alt="Andrew Work 7"></div>
+            <div class="gallery-item"><img src="IMG_8295.jpg" alt="Andrew Work 8"></div>
+            <div class="gallery-item"><img src="IMG_8286.jpg" alt="Andrew Work 9"></div>
+        </div>
+        <!-- Second Grid -->
+        <div class="gallery">
+            <div class="gallery-item"><img src="IMG_8282.jpg" alt="Andrew Work 10"></div>
+            <div class="gallery-item"><img src="IMG_8280.jpg" alt="Andrew Work 11"></div>
+            <div class="gallery-item"><img src="IMG_8285.jpg" alt="Andrew Work 12"></div>
+            <div class="gallery-item"><img src="IMG_8313.jpg" alt="Andrew Work 13"></div>
+            <div class="gallery-item"><img src="IMG_8312.jpg" alt="Andrew Work 14"></div>
+            <div class="gallery-item"><img src="IMG_8311.jpg" alt="Andrew Work 15"></div>
+            <div class="gallery-item"><img src="IMG_8370.jpg" alt="Andrew Work 16"></div>
+            <div class="gallery-item"><img src="IMG_8371.jpg" alt="Andrew Work 17"></div>
+            <div class="gallery-item"><img src="IMG_8372.jpg" alt="Andrew Work 18"></div>
+        </div>
+        <!-- Third Grid -->
+        <div class="gallery">
+            <div class="gallery-item"><img src="/mnt/data/IMG_8368.jpg" alt="Andrew Work 19"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8367.jpg" alt="Andrew Work 20"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8366.jpg" alt="Andrew Work 21"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8365.jpg" alt="Andrew Work 22"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8366.jpg" alt="Andrew Work 23"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8367.jpg" alt="Andrew Work 24"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8368.jpg" alt="Andrew Work 25"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8365.jpg" alt="Andrew Work 26"></div>
+            <div class="gallery-item"><img src="/mnt/data/IMG_8366.jpg" alt="Andrew Work 27"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="https://instagram.com/andrew" target="_blank">Instagram</a>
+            <a href="https://youtube.com/andrew" target="_blank">YouTube</a>
+            <a href="https://twitter.com/andrew" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Andrew's Official Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
